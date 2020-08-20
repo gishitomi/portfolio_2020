@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.labo-img-wrapper {
+    width: 100%;
+    background-image: url("../img/green-chameleon-s9CC2SKySJM-unsplash.jpg");
+    background-size: cover;
+    background-position-x: center;
+    height: 200px;
+}
+
+.labo-img {
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0.349);
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.posts {
+    margin-top: 50px;
+}
+
+.post {
+    position: relative;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.post-left img {
+    width: 100%;
+}
+
+.labo-img h1 {
+    font-size: 50px;
+}
+
+.under-line {
+    border-bottom: solid 2px whitesmoke;
+}
+
+.created {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}

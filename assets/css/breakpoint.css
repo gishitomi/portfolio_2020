@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@media screen and (max-width:768px) {
+    .site-name {
+        font-size: 10vw;
+    }
+    .main-btn {
+        font-size: 5vw;
+    }
+}

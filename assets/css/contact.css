@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.contact-img-wrapper {
+    width: 100%;
+    background-image: url("../img/green-chameleon-s9CC2SKySJM-unsplash.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    height: 200px;
+}
+
+.contact-img {
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0.349);
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send {
+    position: relative;
+}
+
+.send button {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%, -50%);
+}
+
+
+/* input デザイン */
+
+
+/* .contact-img h1 {
+    font-size: 50px;
+}
+
+.cp_iptxt {
+    position: relative;
+    width: 80%;
+    margin: 40px 3%;
+}
+
+.cp_iptxt input[type='text'] {
+    font: 15px/24px sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    letter-spacing: 1px;
+    padding-left: 4em;
+}
+
+.cp_iptxt input[type='text']:focus {
+    outline: none;
+}
+
+.ef {
+    padding: 4px 0;
+    border: 0;
+    border-bottom: 1px solid #bbbcbe;
+    background-color: transparent;
+}
+
+.ef~.focus_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.4s;
+    background-color: #252425;
+}
+
+.ef:focus~.focus_line,
+.cp_iptxt.ef~.focus_line {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.ef~label {
+    position: absolute;
+    z-index: -1;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+    color: #aaaaaa;
+}
+
+.ef:focus~label,
+.cp_iptxt.ef~label {
+    font-size: 12px;
+    top: -16px;
+    transition: 0.3s;
+    color: #1b1b1b;
+} */
+
+
+/* input デザイン終了 */
+
+.contact-position {
+    position: relative;
+}
+
+.contact-error-position {
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    width: 70%;
+}
