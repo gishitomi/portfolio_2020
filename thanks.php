@@ -22,8 +22,11 @@
         </div>
     </div>
     <div class="container container-fluid">
-        <div class="contact-text">
+        <div class="thanks">
             <p>正しく送信されました。ありがとうございます。</p>
+        </div>
+        <div class="back-top">
+        <button type="button" onclick="location.href='index.php'" class="btn btn-outline-dark btn-lg">TOPに戻る</button>
         </div>
     </div>
 

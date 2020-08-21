@@ -54,17 +54,23 @@ if (!empty($_POST)) {
 
         <form action="" method="post">
             <input type="hidden" name="action" value="submit" />
-            <dl>
-                <dt>お名前</dt>
-                <dd><?php print(htmlspecialchars($_SESSION['join']['name'], ENT_QUOTES)); ?></dd>
-                <dt>メールアドレス</dt>
-                <dd><?php print(htmlspecialchars($_SESSION['join']['email'], ENT_QUOTES)); ?></dd>
-                <dt>お問い合わせ内容</dt>
-                <dd><?php print(htmlspecialchars($_SESSION['join']['message'], ENT_QUOTES)); ?></dd>
-            </dl>
-            <div class="send">
-                <a href="contact.php?action=rewrite">&laquo;&nbsp;編集する</a>
-                <button type="submit">送信する</button>
+            <table>
+                <tr>
+                    <th> <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>　Name</th>
+                    <td><?php print(htmlspecialchars($_SESSION['join']['name'], ENT_QUOTES)); ?></td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>　Email</th>
+                    <td><?php print(htmlspecialchars($_SESSION['join']['email'], ENT_QUOTES)); ?></td>
+                </tr>
+                <tr class="comment-table">
+                    <th><i class="fas fa-comment-dots fa-lg fa-fw"></i>Comment</th>
+                    <td><?php print(htmlspecialchars($_SESSION['join']['message'], ENT_QUOTES)); ?></td>
+                </tr>
+            </table>
+            <div class="confirm">
+                <button type="button" onclick="location.href='contact.php?action=rewrite'" class="btn btn-outline-dark btn-lg">&laquo;&nbsp;編集する</button>
+                <button type="submit" class="btn btn-outline-dark btn-lg">送信する</button>
             </div>
         </form>
     </div>

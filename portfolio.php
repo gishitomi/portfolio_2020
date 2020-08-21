@@ -23,13 +23,13 @@
     <div class="container-fluid container" id="app">
         <nav class="navbar navbar-light">
             <a class="navbar-brand">2020年に制作したポートフォリオ</a>
-            <form class="form-inline">
+            <!-- <form class="form-inline">
                 <div class="nav-box">
                     <i class="fas fa-search nav-icon"></i>
                     <input class="form-control mr-sm-2 nav-input" type="search" placeholder="言語名から検索" aria-label="Search">
                 </div>
                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">検索</button>
-            </form>
+            </form> -->
         </nav>
         <div class="portfolios">
             <div class="portfolio">

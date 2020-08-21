@@ -38,7 +38,6 @@ if ($_REQUEST['action'] === 'rewrite' && isset($_SESSION['join'])) {
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
-    <link rel="stylesheet" href="./sass/style.css">
 </head>
 
 <body>
@@ -51,44 +50,47 @@ if ($_REQUEST['action'] === 'rewrite' && isset($_SESSION['join'])) {
     </div>
     <div class="container container-fluid">
         <div class="contact-text">
-            <p>このサイトを通じて私やこのサイトについて、何かコメント等がありましたら、下のフォームからお問い合わせください。</p>
+            <p>閲覧いただきありがとうございます。このサイトを通じて、私やこのサイトについて、何かコメント等がありましたら、下のフォームからお問い合わせください。</p>
         </div>
 
         <form action="" method="post">
-            <div class="wrap">
-                <div>
-                    <input class="ef" name="name" id="name" size="50" maxlength="255" type="text" value="<?php print(htmlspecialchars($_POST['name'], ENT_QUOTES)); ?>">
-                    <label>Name</label>
-                    <span class="focus_line"></span>
+            <div class="profs row">
+                <div class="textbox col">
+                    <div class="cp_iptxt">
+                        <input type="text" id="name" name="name" size="50" maxlength="255" placeholder="Name" value="<?php print(htmlspecialchars($_POST['name'], ENT_QUOTES)); ?>">
+                        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                    </div>
                     <?php if ($error['name'] === 'blank') : ?>
-                        <div class="alert alert-danger" role="alert">
+                        <div class="alert alert-danger error" role="alert">
                             ※お名前を入力してください。
                         </div>
                     <?php endif; ?>
                 </div>
-                <div>
-                    <input class="ef" name="email" id="email" size="50" maxlength="255" type="text" value="<?php print(htmlspecialchars($_POST['email'], ENT_QUOTES)); ?>">
-                    <label>Email</label>
-                    <span class="focus_line"></span>
+                <div class="textbox col">
+                    <div class="cp_iptxt">
+                        <input type="text" id="email" name="email" size="80" maxlength="255" value="<?php print(htmlspecialchars($_POST['email'], ENT_QUOTES)); ?>" placeholder="E-Mail">
+                        <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                    </div>
                     <?php if ($error['email'] === 'blank') : ?>
-                        <div class="alert alert-danger" role="alert">
+                        <div class="alert alert-danger error" role="alert">
                             ※メールアドレスを入力してください。
                         </div>
                     <?php endif; ?>
                 </div>
-                <div>
-                    <input class="ef ef-comment" name="message" id="message" size="100" maxlength="555" type="text" value="<?php print(htmlspecialchars($_POST['message'], ENT_QUOTES)); ?>">
-                    <label>Comment</label>
-                    <span class="focus_line"></span>
-                    <?php if ($error['message'] === 'blank') : ?>
-                        <div class="alert alert-danger contact-error-position" role="alert">
-                            ※お問い合わせ内容を入力してください。
-                        </div>
-                    <?php endif; ?>
+            </div>
+            <div class="textbox">
+                <div class="cp_iptxt_textarea cp_iptxt">
+                    <textarea name="message" id="message" cols="85" rows="7" placeholder="Comment"><?php print(htmlspecialchars($_POST['message'], ENT_QUOTES)); ?></textarea>
+                    <i class="fas fa-comment-dots fa-lg fa-fw"></i>
                 </div>
-                <div class="send">
-                    <button type="submit" class="btn btn-lg btn-outline-dark">入力内容の確認</button>
-                </div>
+                <?php if ($error['message'] === 'blank') : ?>
+                    <div class="alert alert-danger error" role="alert">
+                        ※お問い合わせ内容を入力してください。
+                    </div>
+                <?php endif; ?>
+            </div>
+            <div class="send">
+                <button type="submit" class="btn btn-lg btn-outline-dark">入力内容の確認</button>
             </div>
         </form>
     </div>
@@ -99,7 +101,6 @@ if ($_REQUEST['action'] === 'rewrite' && isset($_SESSION['join'])) {
 
     <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/portfolio.js"></script>
-    <script src="./assets/js/contact.js"></script>
 </body>
 
 </html>
