@@ -28,7 +28,15 @@ var app = new Vue({
                 urlGit: 'https://github.com/gishitomi/vueapp',
                 thumbnailSrc: './assets/img/スクリーンショット 2020-07-12 1.21.46.png',
             },
-        ]
+            {
+                id: 'exampleModalCenter4',
+                title: 'isara模写サイト',
+                url: '',
+                useLanguage: 'HTML / CSS / JavaScript',
+                text: '一般的なLPの構成を学ぶために作成したisaraの模写サイト。',
+                thumbnailSrc: './assets/img/isara-screenshot.jpg',
+            },
+        ],
     },
     methods: {
         modal: function(index) {

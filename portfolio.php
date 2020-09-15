@@ -50,6 +50,12 @@
                 </div>
                 <p class="portfolio-title">{{lists[2].title}}</p>
             </div>
+            <div class="portfolio">
+                <div data-toggle="modal" class="portfolio-img" data-target="#exampleModalCenter4">
+                    <img v-bind:src="lists[3].thumbnailSrc" class="bd-placeholder-img card-img-top float" width="100%" height="180">
+                </div>
+                <p class="portfolio-title">{{lists[2].title}}</p>
+            </div>
             <!-- Modal1  ITと経済のまとめサイト -->
             <div class="modal fade bd-example-modal-lg" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -132,6 +138,37 @@
                                 <div class="col-7">
                                     <a v-bind:href="lists[2].url">
                                         <img v-bind:src="lists[2].thumbnailSrc" style="width: 100%;" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal4  isara模写サイト -->
+            <div class="modal fade bd-example-modal-lg" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">{{lists[3].title}}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-5">
+                                    <p>{{lists[3].text}}</p>
+                                    <p>使用言語など</p>
+                                    <p>{{lists[3].useLanguage}}</p>
+                                </div>
+                                <div class="col-7">
+                                    <a v-bind:href="lists[3].url">
+                                        <img v-bind:src="lists[3].thumbnailSrc" style="width: 100%;" alt="">
                                     </a>
                                 </div>
                             </div>
